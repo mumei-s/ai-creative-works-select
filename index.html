@@ -10,13 +10,13 @@
 <meta property="og:description" content="作品も、過程も、実験も。AIクリエイティブがつながる共同マガジン。">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://mumei-s.github.io/ai-creative-works-select/">
-<meta property="og:image" content="https://mumei-s.github.io/ai-creative-works-select/og-image.svg?v=4df0a0a5">
+<meta property="og:image" content="https://mumei-s.github.io/ai-creative-works-select/og-image.svg?v=bc89439e">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="AI CREATIVE WORKS">
 <meta name="twitter:description" content="作品も、過程も、実験も。AIクリエイティブがつながる共同マガジン。">
-<meta name="twitter:image" content="https://mumei-s.github.io/ai-creative-works-select/og-image.svg?v=4df0a0a5">
+<meta name="twitter:image" content="https://mumei-s.github.io/ai-creative-works-select/og-image.svg?v=bc89439e">
 <style>
 :root{--bg:#090d18;--ink:#f7f4ff;--muted:#b7b5c8;--line:rgba(255,255,255,.10);--purple:#9e7cff;--cyan:#7fe1ef;--max:1160px;--shadow:0 24px 64px rgba(0,0,0,.42)}
 *{box-sizing:border-box}html{scroll-behavior:smooth}
@@ -62,7 +62,7 @@ const BG_POS=['80% center','18% center','74% center','28% center','25% center','
 const CROP_POS=['50% 28%','50% 2%','50% 29%','50% 28%','25% 24%','50% 28%'];
 const ART_SIZE=['cover','100% auto','cover','cover','cover','cover'];
 const $=s=>document.querySelector(s);
-const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot',"'":'&#039;'}[m]));
+const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]));
 const clean=s=>String(s??'').replace(/https?:\/\/\S+/g,' ').replace(/\s+/g,' ').trim();
 const short=(s,n)=>{const t=clean(s);return t.length>n?t.slice(0,n)+'…':t};
 function noteUrl(a){return a?.url || (a?.key ? `https://note.com/ss_yr/n/${a.key}` : 'https://note.com/ss_yr/m/m95b78222e9b9')}
