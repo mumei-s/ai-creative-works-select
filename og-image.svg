@@ -1,74 +1,88 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#07101d"/>
-      <stop offset="0.52" stop-color="#130d2c"/>
-      <stop offset="1" stop-color="#07131c"/>
+      <stop offset="0" stop-color="#060913"/>
+      <stop offset="0.5" stop-color="#0e1027"/>
+      <stop offset="1" stop-color="#080a16"/>
     </linearGradient>
-    <radialGradient id="g1" cx="76%" cy="22%" r="46%">
-      <stop offset="0" stop-color="#a86cff" stop-opacity="0.72"/>
-      <stop offset="1" stop-color="#a86cff" stop-opacity="0"/>
+    <radialGradient id="halo" cx="50%" cy="48%" r="48%">
+      <stop offset="0" stop-color="#b06cff" stop-opacity="0.66"/>
+      <stop offset="0.38" stop-color="#6a50ff" stop-opacity="0.24"/>
+      <stop offset="1" stop-color="#080a16" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="g2" cx="89%" cy="68%" r="40%">
-      <stop offset="0" stop-color="#62efff" stop-opacity="0.38"/>
-      <stop offset="1" stop-color="#62efff" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="g3" cx="18%" cy="84%" r="34%">
-      <stop offset="0" stop-color="#ff5dc8" stop-opacity="0.22"/>
-      <stop offset="1" stop-color="#ff5dc8" stop-opacity="0"/>
-    </radialGradient>
-    <linearGradient id="title" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#7df6ff"/>
-      <stop offset="0.47" stop-color="#b58cff"/>
+    <linearGradient id="orb" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#221a49"/>
+      <stop offset="0.48" stop-color="#3e2570"/>
+      <stop offset="1" stop-color="#112746"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#75f4ff"/>
+      <stop offset="0.46" stop-color="#b783ff"/>
       <stop offset="1" stop-color="#ff7bd4"/>
     </linearGradient>
-    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
-      <feGaussianBlur stdDeviation="12" result="b"/>
+    <linearGradient id="beam" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#65efff" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#65efff" stop-opacity="0.72"/>
+      <stop offset="1" stop-color="#ff75d1" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="18" result="b"/>
       <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
-    <filter id="soft" x="-40%" y="-40%" width="180%" height="180%">
-      <feGaussianBlur stdDeviation="28"/>
+    <filter id="soft" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="42"/>
     </filter>
   </defs>
 
   <rect width="1200" height="630" fill="url(#bg)"/>
-  <rect width="1200" height="630" fill="url(#g1)"/>
-  <rect width="1200" height="630" fill="url(#g2)"/>
-  <rect width="1200" height="630" fill="url(#g3)"/>
+  <rect width="1200" height="630" fill="url(#halo)"/>
 
-  <circle cx="998" cy="118" r="122" fill="#8c5cff" opacity="0.18" filter="url(#soft)"/>
-  <circle cx="1080" cy="472" r="110" fill="#65f0ff" opacity="0.12" filter="url(#soft)"/>
-
-  <g transform="translate(66 58)">
-    <circle cx="48" cy="48" r="47" fill="#24163f" stroke="#b58cff" stroke-opacity="0.58"/>
-    <circle cx="48" cy="48" r="34" fill="#1b1532" stroke="#ffffff" stroke-opacity="0.12"/>
-    <text x="48" y="59" text-anchor="middle" font-size="29" font-weight="800" fill="#ffffff" font-family="Arial,Helvetica,sans-serif">A/C</text>
-    <text x="118" y="36" font-size="20" font-weight="700" letter-spacing="6" fill="#f8f6ff" font-family="Arial,Helvetica,sans-serif">AI CREATIVE WORKS</text>
-    <text x="118" y="65" font-size="11" letter-spacing="4" fill="#bcb7cc" font-family="Arial,Helvetica,sans-serif">MAGAZINE &amp; CREATOR SHOWCASE</text>
+  <g opacity="0.34">
+    <circle cx="206" cy="170" r="96" fill="#5cf0ff" filter="url(#soft)"/>
+    <circle cx="1010" cy="462" r="118" fill="#ff62c9" filter="url(#soft)"/>
+    <circle cx="955" cy="145" r="84" fill="#9e6cff" filter="url(#soft)"/>
   </g>
 
-  <g transform="translate(66 183)">
-    <text x="0" y="0" font-size="22" font-weight="700" letter-spacing="3" fill="#7df6ff" font-family="Arial,'Noto Sans JP',sans-serif">作品も、過程も、実験も。</text>
-    <text x="0" y="98" font-size="102" font-weight="900" letter-spacing="-6" fill="url(#title)" filter="url(#glow)" font-family="Arial,Helvetica,sans-serif">AI CREATIVE</text>
-    <text x="0" y="196" font-size="118" font-weight="900" letter-spacing="-7" fill="#ffffff" font-family="Arial,Helvetica,sans-serif">WORKS</text>
-    <text x="4" y="244" font-size="20" font-weight="600" letter-spacing="1" fill="#ddd9e8" font-family="Arial,'Noto Sans JP',sans-serif">AIイラスト・AI動画・AI Music・Prompt・制作メモが交差する共同マガジン。</text>
+  <g opacity="0.5" fill="none" stroke="url(#ring)">
+    <ellipse cx="600" cy="315" rx="410" ry="190" stroke-width="1.2"/>
+    <ellipse cx="600" cy="315" rx="340" ry="145" stroke-width="0.9" transform="rotate(-8 600 315)"/>
+    <ellipse cx="600" cy="315" rx="305" ry="126" stroke-width="0.7" transform="rotate(11 600 315)"/>
   </g>
 
-  <g transform="translate(66 520)" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="700">
-    <g><rect width="128" height="40" rx="20" fill="#122334" stroke="#62efff" stroke-opacity="0.45"/><text x="64" y="25" text-anchor="middle" fill="#7df6ff">AI Visual</text></g>
-    <g transform="translate(140 0)"><rect width="128" height="40" rx="20" fill="#122334" stroke="#62efff" stroke-opacity="0.45"/><text x="64" y="25" text-anchor="middle" fill="#7df6ff">AI Video</text></g>
-    <g transform="translate(280 0)"><rect width="128" height="40" rx="20" fill="#25152c" stroke="#ff7bd4" stroke-opacity="0.45"/><text x="64" y="25" text-anchor="middle" fill="#ff93da">AI Music</text></g>
-    <g transform="translate(420 0)"><rect width="178" height="40" rx="20" fill="#2a2410" stroke="#ffe86e" stroke-opacity="0.45"/><text x="89" y="25" text-anchor="middle" fill="#ffe86e">Prompt &amp; Making</text></g>
-    <g transform="translate(610 0)"><rect width="138" height="40" rx="20" fill="#17280f" stroke="#a9ff52" stroke-opacity="0.45"/><text x="69" y="25" text-anchor="middle" fill="#baff70">Experiment</text></g>
-    <g transform="translate(760 0)"><rect width="128" height="40" rx="20" fill="#2c1c13" stroke="#ff9d5b" stroke-opacity="0.45"/><text x="64" y="25" text-anchor="middle" fill="#ffb080">Creators</text></g>
+  <path d="M170 330 C320 248 448 260 548 316 C660 378 790 383 1030 275" fill="none" stroke="url(#beam)" stroke-width="5" filter="url(#glow)" opacity="0.72"/>
+  <path d="M120 384 C302 306 450 335 564 382 C698 438 850 415 1090 314" fill="none" stroke="url(#beam)" stroke-width="2" opacity="0.5"/>
+
+  <g opacity="0.82">
+    <rect x="298" y="120" width="116" height="76" rx="18" fill="#0d1e2f" stroke="#65efff" stroke-opacity="0.32" transform="rotate(-9 356 158)"/>
+    <rect x="788" y="435" width="124" height="80" rx="18" fill="#28152c" stroke="#ff75d1" stroke-opacity="0.30" transform="rotate(8 850 475)"/>
+    <rect x="826" y="126" width="102" height="68" rx="16" fill="#24183f" stroke="#b783ff" stroke-opacity="0.34" transform="rotate(7 877 160)"/>
+    <rect x="276" y="432" width="110" height="72" rx="16" fill="#182411" stroke="#b8ff67" stroke-opacity="0.26" transform="rotate(6 331 468)"/>
   </g>
 
-  <g transform="translate(952 448)">
-    <text x="0" y="0" font-size="18" font-weight="700" fill="#ffffff" font-family="Arial,'Noto Sans JP',sans-serif">見るだけでも、参加しても。</text>
-    <text x="0" y="31" font-size="11" letter-spacing="4" fill="#bdb7ca" font-family="Arial,Helvetica,sans-serif">ON NOTE</text>
-    <line x1="0" y1="55" x2="154" y2="55" stroke="#7df6ff" stroke-width="2"/>
-    <path d="M154 55 L139 47 M154 55 L139 63" fill="none" stroke="#7df6ff" stroke-width="2"/>
+  <g filter="url(#glow)">
+    <circle cx="600" cy="315" r="154" fill="none" stroke="url(#ring)" stroke-width="8" opacity="0.84"/>
+  </g>
+  <circle cx="600" cy="315" r="143" fill="url(#orb)" stroke="#ffffff" stroke-opacity="0.12"/>
+  <circle cx="600" cy="315" r="118" fill="#0d1024" fill-opacity="0.42" stroke="#ffffff" stroke-opacity="0.08"/>
+
+  <g font-family="Arial,Helvetica,sans-serif" text-anchor="middle">
+    <text x="600" y="340" font-size="116" font-weight="900" letter-spacing="-8" fill="#ffffff">A/C</text>
+    <text x="600" y="385" font-size="15" font-weight="700" letter-spacing="7" fill="#bfc4d8">CREATIVE SIGNAL</text>
   </g>
 
-  <rect x="18" y="18" width="1164" height="594" rx="30" fill="none" stroke="#ffffff" stroke-opacity="0.08"/>
+  <g>
+    <circle cx="365" cy="315" r="10" fill="#64f3ff" filter="url(#glow)"/>
+    <circle cx="435" cy="190" r="9" fill="#88fff2" filter="url(#glow)"/>
+    <circle cx="520" cy="470" r="10" fill="#ff86d6" filter="url(#glow)"/>
+    <circle cx="680" cy="170" r="9" fill="#ffe85f" filter="url(#glow)"/>
+    <circle cx="772" cy="430" r="10" fill="#a9ff52" filter="url(#glow)"/>
+    <circle cx="840" cy="280" r="9" fill="#ff9d5b" filter="url(#glow)"/>
+  </g>
+
+  <g font-family="Arial,Helvetica,sans-serif" text-anchor="middle">
+    <text x="600" y="548" font-size="27" font-weight="800" letter-spacing="6" fill="#f8f7ff">AI CREATIVE WORKS</text>
+    <text x="600" y="578" font-size="11" letter-spacing="5" fill="#9aa1ba">MAGAZINE &amp; CREATOR SHOWCASE</text>
+  </g>
+
+  <rect x="22" y="22" width="1156" height="586" rx="36" fill="none" stroke="#ffffff" stroke-opacity="0.08"/>
 </svg>
