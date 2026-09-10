@@ -48,122 +48,54 @@ const THEMES=[
   {t:'Creators',d:'参加クリエイターの世界観や活動をひらいて見せる。',a:'#ff9d5b',b:'#72f1ff'}
 ];
 const BG_POS=['80% center','18% center','74% center','28% center','76% center','22% center'];
-const CROP_POS=['50% 28%','62% 25%','50% 29%','50% 28%','72% 24%','50% 28%'];
+const CROP_POS=['50% 28%','50% 25%','50% 29%','50% 28%','72% 24%','50% 28%'];
 const $=s=>document.querySelector(s);
 const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]));
 const clean=s=>String(s??'').replace(/https?:\/\/\S+/g,' ').replace(/\s+/g,' ').trim();
 const short=(s,n)=>{const t=clean(s);return t.length>n?t.slice(0,n)+'…':t};
-
-function noteUrl(a){
-  return a?.url || (a?.key ? `https://note.com/ss_yr/n/${a.key}` : 'https://note.com/ss_yr/m/m95b78222e9b9');
-}
-
+function noteUrl(a){return a?.url || (a?.key ? `https://note.com/ss_yr/n/${a.key}` : 'https://note.com/ss_yr/m/m95b78222e9b9')}
 function artCard(a,i){
   const img=a?.image||'';
   const bgpos=BG_POS[i];
   const croppos=CROP_POS[i];
   const theme=THEMES[i]||{t:'',d:'',a:'#7fe1ef',b:'#d5ff59'};
-
   return `<article class="artCard" style="--img:url('${esc(img)}');--bgpos:${bgpos};--croppos:${croppos};--accent1:${theme.a};--accent2:${theme.b}">
     <a class="artVisual" href="${esc(noteUrl(a))}" target="_blank" rel="noopener" aria-label="${esc(theme.t)} を開く">
       <div class="artBlur"></div>
       <div class="artShade"></div>
       <div class="artCenter"></div>
-      <div class="artMeta">
-        <h3>${esc(theme.t)}</h3>
-        <p>${esc(theme.d)}</p>
-      </div>
+      <div class="artMeta"><h3>${esc(theme.t)}</h3><p>${esc(theme.d)}</p></div>
     </a>
   </article>`;
 }
-
 function memberCard(m,i){
-  const art=m?.art||null;
-  const bg=art?.image||'';
-  const avatar=m?.image||'';
-  const name=m?.nickname||m?.urlname||'Creator';
+  const art=m?.art||null; const bg=art?.image||''; const avatar=m?.image||''; const name=m?.nickname||m?.urlname||'Creator';
   const role=(m?.urlname==='ss_yr'||i===0)?'HOST / CURATOR':'MEMBER / CREATOR';
-  const headline=short(art?.title||m?.profile,56);
-  const bio=short(m?.profile,90);
-  const url=`https://note.com/${m?.urlname||''}`;
+  const headline=short(art?.title||m?.profile,56); const bio=short(m?.profile,90); const url=`https://note.com/${m?.urlname||''}`;
   const search=(name+' '+(m?.urlname||'')).toLowerCase();
-
   return `<a class="member" href="${esc(url)}" target="_blank" rel="noopener" data-search="${esc(search)}" style="--mimg:url('${esc(bg)}')">
-    <div class="memberBg"></div>
-    <div class="memberVeil"></div>
-    <div class="memberFocus"></div>
-    <div class="memberGlow"></div>
-    <div class="avatar">
-      ${avatar?`<img src="${esc(avatar)}" alt="${esc(name)}" loading="lazy">`:''}
-    </div>
-    <div class="memberMain">
-      <span class="role">${role}</span>
-      <h3>${esc(name)}</h3>
-      ${headline?`<p class="headline">${esc(headline)}</p>`:''}
-      ${bio?`<p class="bio">${esc(bio)}</p>`:''}
-      <span class="memberLink">NOTE PROFILE ↗</span>
-    </div>
-  </a>`;
+    <div class="memberBg"></div><div class="memberVeil"></div><div class="memberFocus"></div><div class="memberGlow"></div>
+    <div class="avatar">${avatar?`<img src="${esc(avatar)}" alt="${esc(name)}" loading="lazy">`:''}</div>
+    <div class="memberMain"><span class="role">${role}</span><h3>${esc(name)}</h3>${headline?`<p class="headline">${esc(headline)}</p>`:''}${bio?`<p class="bio">${esc(bio)}</p>`:''}<span class="memberLink">NOTE PROFILE ↗</span></div>
+  </a>`
 }
-
-function filterMembers(){
-  const q=($('#search').value||'').trim().toLowerCase();
-  document.querySelectorAll('.member').forEach(el=>{
-    el.dataset.hide=(!q||(el.dataset.search||'').includes(q))?'0':'1';
-  });
-}
-
+function filterMembers(){const q=($('#search').value||'').trim().toLowerCase();document.querySelectorAll('.member').forEach(el=>{el.dataset.hide=(!q||(el.dataset.search||'').includes(q))?'0':'1';})}
 async function init(){
   try{
-    const r=await fetch(API,{cache:'no-store'});
-    if(!r.ok) throw new Error('api');
-
-    const d=await r.json();
-    const arts=Array.isArray(d.featuredSix)?d.featuredSix:[];
-    const members=Array.isArray(d.members)?d.members:[];
-    const p=d.linkPreview||{};
-
+    const r=await fetch(API,{cache:'no-store'}); if(!r.ok) throw new Error('api');
+    const d=await r.json(); const arts=Array.isArray(d.featuredSix)?d.featuredSix:[]; const members=Array.isArray(d.members)?d.members:[]; const p=d.linkPreview||{};
     document.querySelector('.heroBg').style.setProperty('--hero',`url("${FIXED_HERO}")`);
-
-    if(p.image) $('#previewImg').src=p.image;
-    if(p.url) $('#notePreview').href=p.url;
-
-    if(p.title){
-      $('#previewTitle').textContent=String(p.title)
-        .replace(/\s*SELECT\s*/ig,' ')
-        .replace(/^3️⃣\s*/,'')
-        .replace(/｜note$/,'')
-        .trim();
-    }
-
-    if(p.description){
-      $('#previewDesc').textContent=short(p.description,118);
-    }
-
+    if(p.image) $('#previewImg').src=p.image; if(p.url) $('#notePreview').href=p.url;
+    if(p.title) $('#previewTitle').textContent=String(p.title).replace(/\s*SELECT\s*/ig,' ').replace(/^3️⃣\s*/,'').replace(/｜note$/,'').trim();
+    if(p.description) $('#previewDesc').textContent=short(p.description,118);
     $('#galleryGrid').innerHTML=THEMES.map((_,i)=>artCard(arts[i]||{},i)).join('');
-    $('#memberGrid').innerHTML=members.map(memberCard).join('');
-
-    filterMembers();
+    $('#memberGrid').innerHTML=members.map(memberCard).join(''); filterMembers();
   }catch(e){
-    console.error(e);
-
-    document.querySelector('.heroBg').style.setProperty('--hero',`url("${FIXED_HERO}")`);
-
-    $('#galleryGrid').innerHTML=
-      '<div class="guideItem"><b>画像を読み込めませんでした</b><span>ページを再読み込みしてください。</span></div>';
+    console.error(e); document.querySelector('.heroBg').style.setProperty('--hero',`url("${FIXED_HERO}")`);
+    $('#galleryGrid').innerHTML='<div class="guideItem"><b>画像を読み込めませんでした</b><span>ページを再読み込みしてください。</span></div>';
   }
 }
-
-$('#search').addEventListener('input',filterMembers);
-init();
+$('#search').addEventListener('input',filterMembers); init();
 </script>
 </body>
 </html>
-const CROP_POS=[
-  '50% 28%',
-  '  % 25%',
-  '50% 29%',
-  '50% 28%',
-  '72% 24%',
-  '50% 28%'
-];
