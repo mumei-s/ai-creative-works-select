@@ -5,46 +5,2641 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>AI CREATIVE WORKS</title>
 <meta name="description" content="AI CREATIVE WORKS｜マガジン紹介・運営メンバー紹介">
-<meta name="theme-color" content="#101218">
+<meta name="theme-color" content="#120f22">
+
 <style>
-:root{--bg:#101218;--bg2:#151922;--panel:#181d27;--ink:#f6f4ef;--muted:#aeb5c0;--line:rgba(255,255,255,.10);--violet:#a88cff;--cyan:#78e8f6;--pink:#ff8bd7;--lime:#c7ff85;--max:1160px}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 15% -8%,rgba(120,232,246,.05),transparent 28%),radial-gradient(circle at 100% 28%,rgba(168,140,255,.055),transparent 24%),var(--bg);color:var(--ink);font-family:Inter,"Noto Sans JP","Hiragino Sans","Yu Gothic",system-ui,sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}img{display:block;max-width:100%}.wrap{max-width:var(--max);margin:auto;padding:0 18px}.header{position:sticky;top:0;z-index:30;background:rgba(16,18,24,.84);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}.head{max-width:var(--max);margin:auto;padding:14px 18px;display:flex;align-items:center;justify-content:space-between;gap:16px}.brand{display:flex;align-items:center;gap:12px}.mark{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;font-weight:900;border:1px solid rgba(255,255,255,.22);background:linear-gradient(135deg,rgba(120,232,246,.12),rgba(168,140,255,.10))}.brand b{display:block;font-size:12px;letter-spacing:.18em;line-height:1.1}.brand small{display:block;margin-top:5px;color:var(--muted);font-size:9px;letter-spacing:.14em}.nav{display:flex;gap:17px;font-size:10px;letter-spacing:.13em;color:var(--muted)}
-.hero{position:relative;min-height:78svh;overflow:hidden;border-bottom:1px solid var(--line);display:grid;align-items:end}.heroCanvas,.heroCanvas:before,.heroCanvas:after{position:absolute;inset:0;content:"";pointer-events:none}.heroCanvas{background:linear-gradient(90deg,rgba(10,12,18,.94) 0%,rgba(10,12,18,.66) 42%,rgba(10,12,18,.18) 100%);overflow:hidden}.heroArtA,.heroArtB{position:absolute;inset:-5%;background-image:var(--hero-art);background-size:cover;background-position:center;filter:saturate(.88) contrast(1.08);transform:scale(1.06)}.heroArtA{opacity:.74}.heroArtB{opacity:.68;clip-path:polygon(53% 0,100% 0,100% 100%,39% 100%);transform:scale(1.18) rotate(-1.5deg);filter:saturate(1.05) contrast(1.12)}.heroCanvas:before{background:radial-gradient(circle at 72% 18%,rgba(120,232,246,.14),transparent 28%),radial-gradient(circle at 88% 70%,rgba(255,139,215,.10),transparent 25%)}.heroCanvas:after{background:linear-gradient(0deg,var(--bg) 0%,transparent 34%),linear-gradient(90deg,rgba(9,11,17,.86) 0%,rgba(9,11,17,.30) 55%,rgba(9,11,17,.18) 100%)}.heroIn{position:relative;z-index:2;max-width:var(--max);width:100%;margin:auto;padding:108px 18px 58px}.heroText{max-width:760px;padding:24px 24px 22px;border:1px solid rgba(255,255,255,.11);border-radius:28px;background:rgba(10,12,18,.22);backdrop-filter:blur(8px);box-shadow:0 18px 60px rgba(0,0,0,.18)}.eye{margin:0 0 11px;color:var(--cyan);font-size:10px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;text-shadow:0 0 16px rgba(120,232,246,.35)}.hero h1{margin:0;font-size:clamp(50px,9vw,108px);line-height:.88;letter-spacing:-.06em;font-weight:900}.hero h1 span{color:transparent;-webkit-text-stroke:1px rgba(255,255,255,.76)}.lead{margin:22px 0 0;font-size:clamp(19px,2.2vw,28px);font-weight:900;background:linear-gradient(90deg,#fff 0%,#d9fbff 42%,#d9ccff 100%);-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:0 0 22px rgba(120,232,246,.16)}.copy{margin:11px 0 0;max-width:650px;color:#edf3f5;font-size:14px;text-shadow:0 0 12px rgba(120,232,246,.12)}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 17px;border-radius:999px;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.05);font-size:10px;font-weight:800;letter-spacing:.1em}.btn.primary{background:#f7f5f1;color:#111319;border-color:#f7f5f1}
-section{padding:78px 0}.sectionHead{border-top:1px solid var(--line);padding-top:14px;margin-bottom:32px}.kicker{margin:0 0 7px;color:var(--muted);font-size:10px;letter-spacing:.16em;text-transform:uppercase}.sectionHead h2,.membersHead h2{margin:0;font-size:clamp(34px,6vw,64px);line-height:1.02;letter-spacing:-.05em}.sectionHead h2 em{font-style:normal;color:var(--cyan)}
-.concepts{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.concept{position:relative;min-height:310px;overflow:hidden;border-radius:26px;border:1px solid var(--line);background:#171b24;isolation:isolate}.conceptArt{position:absolute;inset:0;overflow:hidden}.conceptArt img{position:absolute;width:118%;height:118%;object-fit:cover;left:-9%;top:-9%;filter:saturate(.92) contrast(1.08);transition:.4s ease}.concept:nth-child(1) .conceptArt img{clip-path:polygon(0 0,100% 0,78% 100%,0 100%);transform:scale(1.04)}.concept:nth-child(2) .conceptArt img{clip-path:circle(68% at 72% 40%);transform:scale(1.12) rotate(1.5deg)}.concept:nth-child(3) .conceptArt img{clip-path:polygon(18% 0,100% 0,100% 100%,0 100%);transform:scale(1.08) rotate(-2deg)}.concept:nth-child(4) .conceptArt img{clip-path:polygon(0 10%,100% 0,90% 100%,0 86%);transform:scale(1.13)}.concept:nth-child(5) .conceptArt img{clip-path:ellipse(72% 62% at 62% 43%);transform:scale(1.18) rotate(2deg)}.concept:nth-child(6) .conceptArt img{clip-path:polygon(0 0,100% 12%,84% 100%,10% 88%);transform:scale(1.10)}.concept:before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(0deg,rgba(9,11,16,.96) 0%,rgba(9,11,16,.55) 50%,rgba(9,11,16,.10) 82%)}.concept:after{content:"";position:absolute;z-index:1;inset:18px;border:1px solid rgba(255,255,255,.10);border-radius:20px;mix-blend-mode:screen}.concept:nth-child(odd):after{transform:rotate(-1.2deg)}.concept:nth-child(even):after{transform:rotate(1.2deg)}.conceptBody{position:absolute;left:20px;right:20px;bottom:18px;z-index:2}.concept small{color:var(--cyan);font-size:9px;letter-spacing:.15em;text-transform:uppercase;text-shadow:0 0 14px rgba(120,232,246,.4)}.concept h3{margin:5px 0 4px;font-size:clamp(25px,3vw,34px);line-height:1.02}.concept p{margin:0;color:#d9e0e4;font-size:12px}.concept:hover .conceptArt img{transform:scale(1.18)}
-.membersHead{display:flex;justify-content:space-between;align-items:end;gap:16px;margin-bottom:22px}.membersHead p{max-width:640px;margin:9px 0 0;color:var(--muted);font-size:13px}.tools{display:flex;justify-content:flex-start;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:20px}.search{position:relative;flex:1;max-width:500px}.search input{width:100%;height:48px;padding:0 45px 0 14px;border-radius:16px;border:1px solid var(--line);background:#151821;color:#fff;outline:none}.search input:focus{border-color:rgba(120,232,246,.5)}.search:after{content:"⌕";position:absolute;right:14px;top:8px;color:var(--cyan);font-size:21px}.status{padding:13px 15px;border:1px dashed var(--line);border-radius:15px;color:var(--muted);font-size:12px;margin-bottom:16px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.member{position:relative;overflow:hidden;min-height:158px;border-radius:22px;border:1px solid var(--line);background:#191d26;display:grid;grid-template-columns:72px 1fr;gap:14px;padding:15px;isolation:isolate}.memberArt{position:absolute;inset:0;z-index:-3;background-size:cover;background-position:center;filter:saturate(.95) contrast(1.07);transform:scale(1.04)}.member:before{content:"";position:absolute;inset:0;z-index:-2;background:linear-gradient(90deg,rgba(16,19,27,.98) 0%,rgba(16,19,27,.90) 44%,rgba(16,19,27,.58) 100%)}.member:after{content:"";position:absolute;right:-20px;top:-20px;width:180px;height:180px;border-radius:50%;z-index:-1;background:radial-gradient(circle,var(--glow,rgba(120,232,246,.16)),transparent 68%)}.avatar{width:72px;height:72px;border-radius:18px;overflow:hidden;border:1px solid rgba(255,255,255,.13);background:#202431;align-self:start}.avatar img{width:100%;height:100%;object-fit:cover}.role{font-size:8px;font-weight:800;letter-spacing:.13em;color:var(--cyan)}.member h3{margin:4px 0 5px;font-size:19px;line-height:1.15;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.tag{font-weight:800;font-size:12px;line-height:1.45;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.link{display:inline-block;margin-top:10px;font-size:8px;font-weight:800;letter-spacing:.12em}.member[data-hide="1"]{display:none}
-.join{display:grid;grid-template-columns:.88fr 1.12fr;gap:20px;padding:22px;border:1px solid var(--line);border-radius:26px;background:linear-gradient(135deg,#151821,#171d28)}.join h3{margin:0 0 8px;font-size:32px;line-height:1.05}.join p{margin:0;color:var(--muted)}.joinList{display:grid;gap:9px}.joinItem{padding:13px;border-radius:15px;background:#1b1f29;border:1px solid rgba(255,255,255,.06)}.joinItem b{display:block;font-size:13px}.joinItem span{font-size:12px;color:var(--muted)}footer{padding:30px 0 40px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;color:var(--muted);font-size:11px}footer b{color:#fff}
-@media(max-width:900px){.nav{display:none}.concepts{grid-template-columns:1fr 1fr}.grid{grid-template-columns:1fr}.join{grid-template-columns:1fr}}
-@media(max-width:600px){.wrap,.head{padding-left:14px;padding-right:14px}.heroIn{padding:82px 14px 42px}.heroText{padding:20px 18px 18px;border-radius:24px}.hero h1{font-size:15vw}.copy{font-size:13px}.concepts{grid-template-columns:1fr}.concept{min-height:285px}.member{grid-template-columns:62px 1fr;padding:12px;gap:12px;min-height:132px}.avatar{width:62px;height:62px;border-radius:16px}.member h3{font-size:17px}.tag{font-size:11px}.join h3{font-size:28px}}
+:root{
+  --bg:#0b0e19;
+  --bg2:#101526;
+  --panel:#151a2b;
+  --ink:#f7f4ff;
+  --muted:#b9b7ca;
+  --line:rgba(255,255,255,.10);
+
+  --purple:#9f7cff;
+  --purple2:#6e46e8;
+  --pink:#e985d3;
+  --cyan:#7fe1ee;
+
+  --max:1180px;
+  --shadow:0 24px 60px rgba(0,0,0,.42);
+}
+
+*{
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  margin:0;
+  color:var(--ink);
+  font-family:
+    Inter,
+    "Noto Sans JP",
+    "Hiragino Sans",
+    "Yu Gothic",
+    system-ui,
+    sans-serif;
+
+  line-height:1.7;
+
+  background:
+    radial-gradient(
+      circle at 12% -5%,
+      rgba(159,124,255,.22),
+      transparent 25%
+    ),
+    radial-gradient(
+      circle at 85% 5%,
+      rgba(233,133,211,.12),
+      transparent 22%
+    ),
+    radial-gradient(
+      circle at 50% 12%,
+      rgba(91,58,194,.18),
+      transparent 28%
+    ),
+    linear-gradient(
+      180deg,
+      #111126 0%,
+      #0b1020 42%,
+      #090c16 100%
+    );
+
+  -webkit-font-smoothing:antialiased;
+}
+
+a{
+  color:inherit;
+  text-decoration:none;
+}
+
+img{
+  display:block;
+  max-width:100%;
+}
+
+.wrap{
+  max-width:var(--max);
+  margin:auto;
+  padding:0 18px;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header{
+  position:sticky;
+  top:0;
+  z-index:40;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(15,14,31,.91),
+      rgba(11,14,25,.80)
+    );
+
+  backdrop-filter:blur(18px);
+  border-bottom:1px solid var(--line);
+}
+
+.head{
+  max-width:var(--max);
+  margin:auto;
+  padding:14px 18px;
+
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:14px;
+}
+
+.mark{
+  width:62px;
+  height:62px;
+
+  border-radius:50%;
+
+  display:grid;
+  place-items:center;
+
+  font-size:17px;
+  font-weight:900;
+
+  border:1px solid rgba(255,255,255,.20);
+
+  background:
+    radial-gradient(
+      circle at 30% 30%,
+      rgba(255,255,255,.11),
+      transparent 45%
+    ),
+    linear-gradient(
+      145deg,
+      rgba(159,124,255,.28),
+      rgba(61,44,132,.20)
+    );
+
+  box-shadow:
+    0 0 26px rgba(140,95,255,.12),
+    inset 0 0 0 1px rgba(255,255,255,.03);
+}
+
+.brand b{
+  display:block;
+  font-size:12px;
+  line-height:1.12;
+  letter-spacing:.18em;
+}
+
+.brand small{
+  display:block;
+  margin-top:5px;
+
+  color:rgba(247,244,255,.67);
+
+  font-size:9px;
+  letter-spacing:.14em;
+}
+
+.nav{
+  display:flex;
+  gap:18px;
+
+  color:var(--muted);
+
+  font-size:10px;
+  letter-spacing:.13em;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+  position:relative;
+  overflow:hidden;
+
+  border-bottom:1px solid var(--line);
+}
+
+.heroArt{
+  position:absolute;
+  inset:0;
+
+  background:
+    linear-gradient(
+      120deg,
+      rgba(18,12,42,.82),
+      rgba(25,16,55,.45) 45%,
+      rgba(10,13,25,.89)
+    ),
+    var(--hero,none)
+    center / cover no-repeat;
+
+  filter:
+    saturate(1.06)
+    contrast(1.04);
+}
+
+.heroArt:after{
+  content:"";
+  position:absolute;
+  inset:0;
+
+  background:
+    radial-gradient(
+      circle at 72% 18%,
+      rgba(163,104,255,.34),
+      transparent 27%
+    ),
+    radial-gradient(
+      circle at 12% 18%,
+      rgba(105,212,246,.13),
+      transparent 20%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(15,10,31,.04),
+      rgba(11,13,23,.82) 78%,
+      #090c16
+    );
+}
+
+.heroIn{
+  position:relative;
+  z-index:2;
+
+  max-width:var(--max);
+  margin:auto;
+
+  padding:
+    30px 18px
+    44px;
+
+  display:grid;
+  gap:20px;
+}
+
+
+/* =========================
+   NOTE MAGAZINE CARD
+========================= */
+
+.magLink{
+  display:grid;
+
+  grid-template-columns:102px 1fr;
+  gap:14px;
+
+  align-items:center;
+
+  padding:13px;
+
+  border-radius:24px;
+
+  border:
+    1px solid
+    rgba(255,255,255,.14);
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255,255,255,.09),
+      rgba(255,255,255,.035)
+    );
+
+  box-shadow:
+    0 18px 50px rgba(0,0,0,.34);
+
+  backdrop-filter:blur(14px);
+}
+
+.magThumb{
+  width:102px;
+  height:102px;
+
+  overflow:hidden;
+  border-radius:17px;
+
+  background:#171d30;
+
+  border:
+    1px solid
+    rgba(255,255,255,.12);
+}
+
+.magThumb img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.magMeta span{
+  display:inline-flex;
+
+  padding:4px 9px;
+
+  border-radius:999px;
+
+  color:#e8dbff;
+
+  font-size:9px;
+  font-weight:800;
+  letter-spacing:.14em;
+
+  border:
+    1px solid
+    rgba(159,124,255,.28);
+
+  background:
+    rgba(159,124,255,.13);
+}
+
+.magMeta h2{
+  margin:8px 0 4px;
+
+  font-size:21px;
+  line-height:1.1;
+  letter-spacing:-.03em;
+}
+
+.magMeta p{
+  margin:0;
+
+  color:var(--muted);
+
+  font-size:12px;
+  line-height:1.55;
+}
+
+.magMeta b{
+  display:inline-block;
+
+  margin-top:7px;
+
+  font-size:10px;
+  letter-spacing:.12em;
+}
+
+
+/* =========================
+   HERO STATEMENT
+========================= */
+
+.statement{
+  padding:23px;
+
+  border-radius:30px;
+
+  border:
+    1px solid
+    rgba(163,124,255,.22);
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(111,69,223,.18),
+      rgba(255,255,255,.035)
+    );
+
+  box-shadow:
+    inset 0 0 0 1px
+    rgba(255,255,255,.04),
+    0 26px 55px
+    rgba(34,18,80,.25);
+}
+
+.eyebrow{
+  margin:0 0 9px;
+
+  color:var(--cyan);
+
+  font-size:10px;
+  font-weight:800;
+
+  letter-spacing:.18em;
+  text-transform:uppercase;
+}
+
+.statement h1{
+  margin:0;
+
+  max-width:900px;
+
+  font-size:
+    clamp(34px,7vw,70px);
+
+  line-height:1.02;
+  letter-spacing:-.055em;
+
+  color:#fff;
+}
+
+.statement h1 .neon{
+  color:#d7c5ff;
+
+  text-shadow:
+    0 0 10px
+    rgba(190,166,255,.54),
+
+    0 0 28px
+    rgba(154,106,255,.33);
+}
+
+.statement .lead{
+  margin:15px 0 0;
+
+  max-width:760px;
+
+  color:#efecff;
+
+  font-size:15px;
+}
+
+.heroBtns{
+  margin-top:18px;
+
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+}
+
+.btn{
+  min-height:44px;
+
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+
+  padding:0 18px;
+
+  border-radius:999px;
+
+  border:
+    1px solid
+    rgba(255,255,255,.16);
+
+  background:
+    rgba(255,255,255,.055);
+
+  font-size:10px;
+  font-weight:800;
+
+  letter-spacing:.12em;
+}
+
+.btn.primary{
+  color:#120f22;
+
+  border-color:transparent;
+
+  background:
+    linear-gradient(
+      135deg,
+      #f7f4ff,
+      #d8c8ff
+    );
+}
+
+
+/* =========================
+   GUIDE
+========================= */
+
+.section{
+  padding:64px 0;
+}
+
+.rules{
+  display:grid;
+
+  grid-template-columns:
+    repeat(3,1fr);
+
+  gap:12px;
+}
+
+.rule{
+  padding:17px;
+
+  border-radius:20px;
+
+  border:
+    1px solid
+    rgba(255,255,255,.08);
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255,255,255,.045),
+      rgba(255,255,255,.018)
+    );
+}
+
+.rule b{
+  display:block;
+
+  margin-bottom:5px;
+
+  font-size:14px;
+}
+
+.rule span{
+  display:block;
+
+  color:var(--muted);
+
+  font-size:12px;
+  line-height:1.6;
+}
+
+
+/* =========================
+   SECTION HEAD
+========================= */
+
+.sectionHead{
+  padding-top:14px;
+  margin-bottom:25px;
+
+  border-top:
+    1px solid var(--line);
+}
+
+.sectionHead p{
+  margin:0 0 7px;
+
+  color:var(--muted);
+
+  font-size:10px;
+  letter-spacing:.16em;
+
+  text-transform:uppercase;
+}
+
+.sectionHead h2{
+  margin:0;
+
+  font-size:
+    clamp(30px,6vw,55px);
+
+  line-height:1.03;
+  letter-spacing:-.05em;
+}
+
+.sectionHead h2 em{
+  font-style:normal;
+
+  color:#d6c4ff;
+
+  text-shadow:
+    0 0 18px
+    rgba(157,124,255,.27);
+}
+
+
+/* =========================
+   ART GALLERY
+========================= */
+
+.gallery{
+  display:grid;
+
+  grid-template-columns:
+    repeat(2,minmax(0,1fr));
+
+  gap:18px;
+}
+
+.card{
+  position:relative;
+
+  min-height:340px;
+
+  overflow:hidden;
+
+  border-radius:30px;
+
+  border:
+    1px solid
+    rgba(255,255,255,.10);
+
+  background:#14192a;
+
+  box-shadow:var(--shadow);
+}
+
+
+/*
+ 背景レイヤー
+*/
+
+.cardBg{
+  position:absolute;
+
+  inset:-7%;
+
+  background:
+    var(--bgimg,none)
+    center / cover no-repeat;
+
+  filter:
+    blur(18px)
+    saturate(1.14)
+    contrast(1.04);
+
+  opacity:.50;
+
+  transform:scale(1.10);
+}
+
+
+/*
+ 元絵を全面表示するのではなく
+ 背景の世界観として使う
+*/
+
+.cardScene{
+  position:absolute;
+  inset:0;
+
+  background:
+    linear-gradient(
+      110deg,
+      rgba(10,13,23,.88),
+      rgba(12,15,26,.34) 48%,
+      rgba(10,13,23,.84)
+    ),
+    var(--bgimg,none)
+    center / cover no-repeat;
+
+  opacity:.72;
+}
+
+
+/*
+ キャラ・主要部分を
+ もう一度切り抜く感覚で拡大表示
+*/
+
+.cardFocus{
+  position:absolute;
+
+  top:16px;
+  bottom:16px;
+
+  width:45%;
+
+  border-radius:23px;
+
+  background:
+    var(--bgimg,none)
+    var(--focus,70% center) /
+    180% auto
+    no-repeat;
+
+  border:
+    1px solid
+    rgba(255,255,255,.13);
+
+  box-shadow:
+    0 20px 50px
+    rgba(0,0,0,.42);
+
+  filter:
+    saturate(1.12)
+    contrast(1.04);
+}
+
+.card.right .cardFocus{
+  right:16px;
+}
+
+.card.left .cardFocus{
+  left:16px;
+}
+
+
+/*
+ 文字側の薄い背景
+*/
+
+.cardShade{
+  position:absolute;
+
+  top:0;
+  bottom:0;
+
+  width:62%;
+
+  backdrop-filter:
+    blur(8px);
+}
+
+.card.right .cardShade{
+  left:0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(9,12,23,.97),
+      rgba(9,12,23,.82) 74%,
+      rgba(9,12,23,.10)
+    );
+}
+
+.card.left .cardShade{
+  right:0;
+
+  background:
+    linear-gradient(
+      270deg,
+      rgba(9,12,23,.97),
+      rgba(9,12,23,.82) 74%,
+      rgba(9,12,23,.10)
+    );
+}
+
+
+/*
+ ネオン光
+*/
+
+.cardGlow{
+  position:absolute;
+
+  width:190px;
+  height:190px;
+
+  border-radius:50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(150,105,255,.30),
+      transparent 68%
+    );
+
+  filter:blur(10px);
+
+  opacity:.75;
+}
+
+.card.right .cardGlow{
+  right:-20px;
+  top:-30px;
+}
+
+.card.left .cardGlow{
+  left:-20px;
+  top:-30px;
+}
+
+
+/*
+ テキスト
+*/
+
+.cardBody{
+  position:absolute;
+  z-index:3;
+
+  bottom:20px;
+
+  width:55%;
+
+  padding:0 19px;
+}
+
+.card.right .cardBody{
+  left:0;
+}
+
+.card.left .cardBody{
+  right:0;
+}
+
+.card small{
+  display:block;
+
+  color:var(--cyan);
+
+  font-size:10px;
+  font-weight:800;
+
+  letter-spacing:.18em;
+}
+
+.card h3{
+  margin:8px 0 7px;
+
+  color:#fff;
+
+  font-size:
+    clamp(25px,4vw,40px);
+
+  line-height:1.03;
+  letter-spacing:-.045em;
+
+  text-shadow:
+    0 0 16px
+    rgba(255,255,255,.08);
+}
+
+.card p{
+  margin:0;
+
+  color:#eeebff;
+
+  font-size:13px;
+}
+
+.artTitle{
+  margin-top:10px;
+
+  color:
+    rgba(247,244,255,.67);
+
+  font-size:10px;
+  line-height:1.45;
+}
+
+
+/* =========================
+   MEMBERS
+========================= */
+
+.membersTop{
+  display:flex;
+
+  justify-content:space-between;
+  align-items:flex-end;
+
+  gap:16px;
+
+  margin-bottom:20px;
+
+  flex-wrap:wrap;
+}
+
+.membersTop h2{
+  margin:0;
+
+  font-size:
+    clamp(32px,6vw,52px);
+
+  line-height:1;
+
+  letter-spacing:-.05em;
+}
+
+.search{
+  position:relative;
+
+  width:100%;
+  max-width:430px;
+}
+
+.search input{
+  width:100%;
+  height:47px;
+
+  padding:
+    0 44px
+    0 14px;
+
+  color:#fff;
+
+  border-radius:15px;
+
+  border:
+    1px solid
+    rgba(255,255,255,.10);
+
+  background:
+    rgba(17,22,38,.88);
+
+  outline:none;
+}
+
+.search input:focus{
+  border-color:
+    rgba(157,124,255,.45);
+}
+
+.search:after{
+  content:"⌕";
+
+  position:absolute;
+
+  right:14px;
+  top:7px;
+
+  color:#bfa6ff;
+
+  font-size:22px;
+}
+
+.memberGrid{
+  display:grid;
+
+  grid-template-columns:1fr;
+
+  gap:12px;
+}
+
+
+/*
+ 横長コンパクトカード
+*/
+
+.member{
+  position:relative;
+
+  min-height:142px;
+
+  overflow:hidden;
+
+  display:grid;
+
+  grid-template-columns:
+    84px minmax(0,1fr);
+
+  gap:13px;
+
+  padding:13px;
+
+  border-radius:24px;
+
+  border:
+    1px solid
+    rgba(255,255,255,.09);
+
+  background:#151a2b;
+
+  box-shadow:
+    0 16px 42px
+    rgba(0,0,0,.30);
+
+  isolation:isolate;
+}
+
+
+/*
+ クリエイター作品を背景化
+*/
+
+.memberArtwork{
+  position:absolute;
+
+  inset:0;
+
+  z-index:-3;
+
+  background:
+    var(--mimg,none)
+    72% center /
+    cover no-repeat;
+
+  filter:
+    saturate(1.12)
+    contrast(1.03);
+
+  opacity:.42;
+}
+
+
+/*
+ 背景を薄く加工
+*/
+
+.memberOverlay{
+  position:absolute;
+
+  inset:0;
+
+  z-index:-2;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(18,23,39,.99) 0%,
+      rgba(18,23,39,.94) 45%,
+      rgba(18,23,39,.63) 75%,
+      rgba(18,23,39,.72)
+    );
+}
+
+
+/*
+ 右側に作品を再び抜粋
+*/
+
+.memberCut{
+  position:absolute;
+
+  z-index:-1;
+
+  right:0;
+  top:0;
+  bottom:0;
+
+  width:38%;
+
+  background:
+    var(--mimg,none)
+    70% center /
+    165% auto
+    no-repeat;
+
+  opacity:.28;
+
+  filter:
+    blur(1px)
+    saturate(1.2);
+
+  mask-image:
+    linear-gradient(
+      90deg,
+      transparent,
+      #000 36%
+    );
+}
+
+
+/*
+ プロフィールアイコン
+*/
+
+.avatar{
+  position:relative;
+
+  width:84px;
+  height:84px;
+
+  overflow:hidden;
+
+  border-radius:20px;
+
+  border:
+    1px solid
+    rgba(255,255,255,.14);
+
+  background:#202638;
+}
+
+.avatar img{
+  width:100%;
+  height:100%;
+
+  object-fit:cover;
+}
+
+.memberMain{
+  min-width:0;
+}
+
+.role{
+  display:block;
+
+  color:var(--cyan);
+
+  font-size:9px;
+  font-weight:800;
+
+  letter-spacing:.15em;
+}
+
+.member h3{
+  margin:5px 0 5px;
+
+  font-size:22px;
+  line-height:1.1;
+
+  letter-spacing:-.03em;
+}
+
+.headline{
+  margin:0 0 5px;
+
+  font-size:13px;
+  font-weight:800;
+
+  color:#f3efff;
+}
+
+.bio{
+  margin:0;
+
+  color:var(--muted);
+
+  font-size:11px;
+  line-height:1.55;
+
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
+
+.memberLink{
+  display:inline-flex;
+
+  margin-top:7px;
+
+  font-size:9px;
+  font-weight:800;
+
+  letter-spacing:.11em;
+}
+
+.member[data-hide="1"]{
+  display:none;
+}
+
+
+/* =========================
+   JOIN
+========================= */
+
+.cta{
+  padding:25px;
+
+  border-radius:28px;
+
+  border:
+    1px solid
+    rgba(157,124,255,.19);
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(130,80,230,.15),
+      rgba(255,255,255,.025)
+    );
+}
+
+.cta h3{
+  margin:0 0 8px;
+
+  font-size:32px;
+  line-height:1.05;
+}
+
+.cta p{
+  margin:0;
+
+  color:var(--muted);
+}
+
+.foot{
+  padding:
+    28px 0
+    40px;
+
+  display:flex;
+  justify-content:space-between;
+
+  gap:16px;
+  flex-wrap:wrap;
+
+  border-top:
+    1px solid var(--line);
+
+  color:var(--muted);
+
+  font-size:11px;
+}
+
+.foot b{
+  color:#fff;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:900px){
+
+  .nav{
+    display:none;
+  }
+
+  .gallery{
+    grid-template-columns:1fr;
+  }
+
+  .rules{
+    grid-template-columns:1fr;
+  }
+
+}
+
+
+@media(max-width:640px){
+
+  .wrap,
+  .head,
+  .heroIn{
+    padding-left:14px;
+    padding-right:14px;
+  }
+
+  .mark{
+    width:58px;
+    height:58px;
+  }
+
+  .brand b{
+    font-size:11px;
+  }
+
+  .heroIn{
+    padding-top:20px;
+  }
+
+  .magLink{
+    grid-template-columns:
+      84px 1fr;
+  }
+
+  .magThumb{
+    width:84px;
+    height:84px;
+  }
+
+  .magMeta h2{
+    font-size:18px;
+  }
+
+  .statement{
+    padding:18px;
+  }
+
+  .statement h1{
+    font-size:12.5vw;
+  }
+
+  .statement .lead{
+    font-size:13px;
+  }
+
+  .section{
+    padding:56px 0;
+  }
+
+  .card{
+    min-height:310px;
+  }
+
+  .cardFocus{
+    top:13px;
+    bottom:13px;
+
+    width:45%;
+  }
+
+  .cardShade{
+    width:64%;
+  }
+
+  .cardBody{
+    width:60%;
+
+    bottom:16px;
+
+    padding:0 14px;
+  }
+
+  .card h3{
+    font-size:22px;
+  }
+
+  .card p{
+    font-size:12px;
+  }
+
+  .member{
+    grid-template-columns:
+      78px minmax(0,1fr);
+
+    min-height:130px;
+
+    padding:12px;
+  }
+
+  .avatar{
+    width:78px;
+    height:78px;
+
+    border-radius:18px;
+  }
+
+  .member h3{
+    font-size:20px;
+  }
+
+  .memberCut{
+    width:42%;
+  }
+
+  .cta h3{
+    font-size:27px;
+  }
+
+}
+
 </style>
 </head>
+
 <body>
-<header class="header"><div class="head"><a class="brand" href="#top"><div class="mark">A/C</div><div><b>AI CREATIVE WORKS</b><small>MAGAZINE & CREATOR SHOWCASE</small></div></a><nav class="nav"><a href="#concept">CONCEPT</a><a href="#members">MEMBERS</a><a href="#join">JOIN</a></nav></div></header>
+
+<header class="header">
+
+  <div class="head">
+
+    <a
+      class="brand"
+      href="#top"
+    >
+
+      <div class="mark">
+        A/C
+      </div>
+
+      <div>
+
+        <b>
+          AI CREATIVE WORKS
+        </b>
+
+        <small>
+          MAGAZINE & CREATOR SHOWCASE
+        </small>
+
+      </div>
+
+    </a>
+
+    <nav class="nav">
+
+      <a href="#concept">
+        CONCEPT
+      </a>
+
+      <a href="#members">
+        MEMBERS
+      </a>
+
+      <a href="#join">
+        JOIN
+      </a>
+
+    </nav>
+
+  </div>
+
+</header>
+
+
 <main>
-<section class="hero" id="top"><div class="heroCanvas"><div class="heroArtA"></div><div class="heroArtB"></div></div><div class="heroIn"><div class="heroText"><p class="eye">MUMEI S NOTE / COLLABORATIVE MAGAZINE</p><h1>AI CREATIVE<br><span>WORKS</span></h1><p class="lead">作品も、過程も、実験も。</p><p class="copy">AIイラスト、AIアート、AI Music、AI画像生成、AI動画。完成した作品だけでなく、制作過程・プロンプト・制作メモ・検証まで楽しむ共同マガジンです。</p><div class="actions"><a class="btn primary" href="#members">メンバーを見る</a><a class="btn" href="https://note.com/ss_yr/m/m95b78222e9b9" target="_blank" rel="noopener">NOTEで開く ↗</a></div></div></div></section>
+
+
+<section
+  class="hero"
+  id="top"
+>
+
+  <div class="heroArt">
+  </div>
+
+  <div class="heroIn">
+
+
+    <!-- note標準カード風リンク -->
+
+    <a
+      class="magLink"
+      id="magLink"
+      href="https://note.com/ss_yr/m/m95b78222e9b9"
+      target="_blank"
+      rel="noopener"
+    >
+
+      <div class="magThumb">
+
+        <img
+          id="magThumb"
+          alt="AI CREATIVE WORKS"
+        >
+
+      </div>
+
+      <div class="magMeta">
+
+        <span>
+          NOTE MAGAZINE
+        </span>
+
+        <h2 id="magName">
+          AI CREATIVE WORKS
+        </h2>
+
+        <p id="magDesc">
+          AIクリエイティブ作品や制作過程を楽しむ共同マガジン。
+        </p>
+
+        <b>
+          noteで開く ↗
+        </b>
+
+      </div>
+
+    </a>
+
+
+    <!-- メイン説明 -->
+
+    <div class="statement">
+
+      <p class="eyebrow">
+        MUMEI S NOTE / CREATIVE MAGAZINE
+      </p>
+
+      <h1>
+
+        作品も、
+
+        <span class="neon">
+          過程も、実験も。
+        </span>
+
+        <br>
+
+        AIクリエイティブを楽しむ共同マガジン。
+
+      </h1>
+
+      <p
+        class="lead"
+        id="leadText"
+      >
+
+        AIイラスト、AIアート、AI動画、AI Music、
+        プロンプト、制作メモまで。
+        完成品だけでなく、
+        創作の途中も楽しめる場所です。
+
+      </p>
+
+      <div class="heroBtns">
+
+        <a
+          class="btn primary"
+          href="#members"
+        >
+          メンバーを見る
+        </a>
+
+        <a
+          class="btn"
+          href="#concept"
+        >
+          作品を見る
+        </a>
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+
 <div class="wrap">
-<section id="concept"><div class="sectionHead"><p class="kicker">Concept through real works</p><h2>無名S noteの作品から、<br><em>創作の空気を組み替える。</em></h2></div><div class="concepts" id="conceptGrid">
-<article class="concept"><div class="conceptArt"></div><div class="conceptBody"><small>Create</small><h3>AI Visual</h3><p>イラスト・アート・画像生成。</p></div></article>
-<article class="concept"><div class="conceptArt"></div><div class="conceptBody"><small>Move</small><h3>AI Video</h3><p>静止画から映像へ。</p></div></article>
-<article class="concept"><div class="conceptArt"></div><div class="conceptBody"><small>Sound</small><h3>AI Music</h3><p>音楽、歌詞、MV。</p></div></article>
-<article class="concept"><div class="conceptArt"></div><div class="conceptBody"><small>Process</small><h3>Prompt & Making</h3><p>制作メモ、比較、検証。</p></div></article>
-<article class="concept"><div class="conceptArt"></div><div class="conceptBody"><small>Try</small><h3>Experiment</h3><p>新しいモデルや機能を試す。</p></div></article>
-<article class="concept"><div class="conceptArt"></div><div class="conceptBody"><small>Connect</small><h3>Creators</h3><p>作品から交流を広げる。</p></div></article>
-</div></section>
-<section id="members"><div class="membersHead"><div><p class="kicker">Meet the creators</p><h2>運営メンバー</h2><p>各クリエイターの最新記事ビジュアルを背景に使い、現在の運営メンバーを自動表示します。</p></div></div><div class="tools"><label class="search"><input id="q" type="search" placeholder="名前・活動内容で検索"></label></div><div class="status" id="status">最新の運営メンバーを読み込み中です…</div><div class="grid" id="grid"></div></section>
-<section id="join"><div class="sectionHead"><p class="kicker">Join the magazine</p><h2>見るだけでも、<br><em>参加しても。</em></h2></div><div class="join"><div><h3>AI CREATIVE WORKS</h3><p>AIクリエイティブを楽しむ人が集まり、作品や制作過程を見つけやすくする共同マガジンです。</p><div class="actions"><a class="btn primary" href="https://note.com/ss_yr/m/m95b78222e9b9" target="_blank" rel="noopener">NOTEで見る ↗</a></div></div><div class="joinList"><div class="joinItem"><b>無名S noteをフォロー</b><span>参加前に運営アカウントをフォロー。</span></div><div class="joinItem"><b>コメント欄から参加希望</b><span>案内記事から参加を伝える。</span></div><div class="joinItem"><b>記事追加は1日3回まで</b><span>再投稿を含めた記事追加上限。</span></div><div class="joinItem"><b>スキ・フォローで応援</b><span>互いの創作を見つけて応援。</span></div></div></div></section>
-<footer><div><b>AI CREATIVE WORKS</b><br>Magazine & creator showcase</div><div>Independent GitHub Pages</div></footer>
-</div></main>
+
+
+<!-- =========================
+     RULE
+========================= -->
+
+<section class="section">
+
+  <div class="rules">
+
+    <div class="rule">
+
+      <b>
+        作品も制作過程も歓迎
+      </b>
+
+      <span>
+        完成品だけでなく、
+        途中の試行錯誤も共有できます。
+      </span>
+
+    </div>
+
+
+    <div class="rule">
+
+      <b>
+        参加希望はコメントから
+      </b>
+
+      <span>
+        無名S noteをフォロー後、
+        案内記事のコメント欄から参加希望を伝えます。
+      </span>
+
+    </div>
+
+
+    <div class="rule">
+
+      <b>
+        記事追加は1日3回まで
+      </b>
+
+      <span>
+        再投稿を含めた上限。
+        見やすい流れを保つためのルールです。
+      </span>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================
+     CONCEPT
+========================= -->
+
+<section
+  class="section"
+  id="concept"
+>
+
+  <div class="sectionHead">
+
+    <p>
+      CONCEPT THROUGH REAL WORKS
+    </p>
+
+    <h2>
+
+      1枚をそのまま置かず、
+
+      <br>
+
+      <em>
+        キャラと背景を抜き出して魅せる。
+      </em>
+
+    </h2>
+
+  </div>
+
+
+  <div
+    class="gallery"
+    id="gallery"
+  >
+  </div>
+
+
+</section>
+
+
+
+<!-- =========================
+     MEMBERS
+========================= -->
+
+<section
+  class="section"
+  id="members"
+>
+
+  <div class="membersTop">
+
+    <h2>
+      運営メンバー
+    </h2>
+
+    <label class="search">
+
+      <input
+        id="search"
+        type="search"
+        placeholder="名前・活動内容で検索"
+      >
+
+    </label>
+
+  </div>
+
+
+  <div
+    class="memberGrid"
+    id="memberGrid"
+  >
+  </div>
+
+
+</section>
+
+
+
+<!-- =========================
+     JOIN
+========================= -->
+
+<section
+  class="section"
+  id="join"
+>
+
+  <div class="cta">
+
+    <h3>
+      見るだけでも、参加しても。
+    </h3>
+
+    <p>
+      AIクリエイティブを楽しむ人が集まり、
+      作品や制作過程を見つけやすくする共同マガジンです。
+    </p>
+
+    <div class="heroBtns">
+
+      <a
+        class="btn primary"
+        href="https://note.com/ss_yr/m/m95b78222e9b9"
+        target="_blank"
+        rel="noopener"
+      >
+        noteで開く ↗
+      </a>
+
+      <a
+        class="btn"
+        href="#top"
+      >
+        トップへ戻る
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<footer class="foot">
+
+  <div>
+
+    <b>
+      AI CREATIVE WORKS
+    </b>
+
+    <br>
+
+    Magazine & Creator Showcase
+
+  </div>
+
+  <div>
+    Hosted on GitHub Pages
+  </div>
+
+</footer>
+
+
+</div>
+
+</main>
+
+
+
 <script>
-const API='https://xxhaerjvrgmnadxjqetz.supabase.co/functions/v1/ai-creative-showcase';
-const $=s=>document.querySelector(s),esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]));
-function profile(s=''){let t=String(s).replace(/https?:\/\/\S+/g,' ').replace(/\s+/g,' ').trim();return t.length>82?t.slice(0,82)+'…':t}
-function color(n=''){let h=0;for(const c of n)h=(h*31+c.charCodeAt(0))%5;return ['rgba(120,232,246,.18)','rgba(168,140,255,.16)','rgba(255,139,215,.14)','rgba(199,255,133,.12)','rgba(232,202,130,.13)'][h]}
-function card(m,i){let name=m.nickname||m.urlname||'Creator',img=m.image||'',art=m.art?.image||img,p=m.profile||'',url='https://note.com/'+m.urlname,role=(m.urlname==='ss_yr'||i===0)?'HOST / CURATOR':'MEMBER / CREATOR',search=(name+' '+m.urlname+' '+p).toLowerCase();return `<a class="member" href="${esc(url)}" target="_blank" rel="noopener" data-s="${esc(search)}" style="--glow:${color(name)}"><div class="memberArt" style="${art?`background-image:url('${esc(art)}')`:''}"></div><div class="avatar">${img?`<img src="${esc(img)}" alt="${esc(name)}" loading="lazy">`:''}</div><div><div class="role">${role}</div><h3>${esc(name)}</h3><div class="tag">${esc(profile(p)||'AI CREATIVE MEMBER')}</div><span class="link">NOTE PROFILE ↗</span></div></a>`}
-function filter(){let q=$('#q').value.trim().toLowerCase();document.querySelectorAll('.member').forEach(c=>{c.dataset.hide=(!q||c.dataset.s.includes(q))?'0':'1'})}
-function fillConcepts(arts=[]){let cards=[...document.querySelectorAll('.concept')];cards.forEach((c,i)=>{let a=arts[i%Math.max(arts.length,1)];if(!a?.image)return;let img=document.createElement('img');img.src=a.image;img.alt='';img.loading='lazy';c.querySelector('.conceptArt').appendChild(img)});if(arts[0]?.image)document.querySelector('.hero').style.setProperty('--hero-art',`url("${arts[0].image}")`)}
-async function init(){try{let r=await fetch(API,{cache:'no-store'});if(!r.ok)throw new Error('API '+r.status);let d=await r.json();if(!d.ok)throw new Error('API response');let members=Array.isArray(d.members)?d.members:[],arts=Array.isArray(d.hostArtworks)?d.hostArtworks:[];$('#grid').innerHTML=members.map(card).join('');fillConcepts(arts);$('#status').remove();filter()}catch(e){console.error(e);$('#status').textContent='最新情報を取得できませんでした。ページを再読み込みしてください。'}}
-$('#q').addEventListener('input',filter);init();
+
+const API =
+  'https://xxhaerjvrgmnadxjqetz.supabase.co/functions/v1/ai-creative-showcase';
+
+
+const SLOTS = [
+
+  {
+    slot:'visual',
+    label:'CREATE',
+    title:'AI Visual',
+    description:'イラスト・アート・画像生成。'
+  },
+
+  {
+    slot:'video',
+    label:'MOVE',
+    title:'AI Video',
+    description:'静止画から映像へ。'
+  },
+
+  {
+    slot:'music',
+    label:'SOUND',
+    title:'AI Music',
+    description:'音楽、歌詞、MV。'
+  },
+
+  {
+    slot:'process',
+    label:'PROCESS',
+    title:'Prompt & Making',
+    description:'制作メモ、比較、検証。'
+  },
+
+  {
+    slot:'try',
+    label:'TRY',
+    title:'Experiment',
+    description:'新しいモデルや機能を試す。'
+  },
+
+  {
+    slot:'connect',
+    label:'CONNECT',
+    title:'Creators',
+    description:'作品から交流を広げる。'
+  }
+
+];
+
+
+const $ =
+  selector =>
+    document.querySelector(selector);
+
+
+const escapeHtml =
+  value =>
+
+    String(value ?? '')
+
+      .replace(
+
+        /[&<>"']/g,
+
+        char => (
+
+          {
+            '&':'&amp;',
+            '<':'&lt;',
+            '>':'&gt;',
+            '"':'&quot;',
+            "'":'&#039;'
+          }
+
+        )[char]
+
+      );
+
+
+function cleanText(value){
+
+  return String(value ?? '')
+
+    .replace(
+      /https?:\/\/\S+/g,
+      ' '
+    )
+
+    .replace(
+      /\s+/g,
+      ' '
+    )
+
+    .trim();
+
+}
+
+
+function shorten(
+  value,
+  length
+){
+
+  const text =
+    cleanText(value);
+
+  return
+    text.length > length
+      ? text.slice(0,length) + '…'
+      : text;
+
+}
+
+
+function articleURL(
+  artwork
+){
+
+  if(
+    artwork?.url
+  ){
+
+    return artwork.url;
+
+  }
+
+
+  if(
+    artwork?.creator?.urlname &&
+    artwork?.key
+  ){
+
+    return
+      `https://note.com/${artwork.creator.urlname}/n/${artwork.key}`;
+
+  }
+
+
+  return
+    'https://note.com/ss_yr/m/m95b78222e9b9';
+
+}
+
+
+
+function classifyArtwork(
+  value
+){
+
+  const text =
+    value.toLowerCase();
+
+
+  if(
+    /music|音楽|楽曲|歌詞|suno|mv/.test(text)
+  ){
+
+    return 'music';
+
+  }
+
+
+  if(
+    /video|動画|映像|movie|pollo|minimax|h3/.test(text)
+  ){
+
+    return 'video';
+
+  }
+
+
+  if(
+    /prompt|プロンプト|レシピ|制作メモ|メイキング|making|比較|検証/.test(text)
+  ){
+
+    return 'process';
+
+  }
+
+
+  if(
+    /実験|experiment|試して|やってみた|モデル/.test(text)
+  ){
+
+    return 'try';
+
+  }
+
+
+  if(
+    /creator|紹介|メンバー|共マガ|共同|交流/.test(text)
+  ){
+
+    return 'connect';
+
+  }
+
+
+  return 'visual';
+
+}
+
+
+
+function chooseArtworks(
+  artworks
+){
+
+  const bucket = {};
+
+
+  artworks.forEach(
+
+    artwork => {
+
+      const source =
+
+        `${artwork?.category ?? ''} ` +
+
+        `${artwork?.title ?? ''} ` +
+
+        `${artwork?.body ?? ''}`;
+
+
+      const type =
+        classifyArtwork(source);
+
+
+      if(
+        !bucket[type]
+      ){
+
+        bucket[type] =
+          artwork;
+
+      }
+
+    }
+
+  );
+
+
+  return SLOTS.map(
+
+    (slot,index) =>
+
+      bucket[slot.slot] ||
+
+      artworks[
+        index %
+        Math.max(
+          artworks.length,
+          1
+        )
+      ] ||
+
+      null
+
+  );
+
+}
+
+
+
+function createConceptCard(
+  artwork,
+  slot,
+  index
+){
+
+  const image =
+
+    artwork?.eyecatch ||
+
+    artwork?.image ||
+
+    artwork?.thumbnail ||
+
+    artwork?.cover ||
+
+    '';
+
+
+  const url =
+    articleURL(artwork);
+
+
+  const side =
+    index % 2 === 0
+      ? 'right'
+      : 'left';
+
+
+  const focus =
+    index % 2 === 0
+      ? '72% center'
+      : '28% center';
+
+
+  const articleTitle =
+    shorten(
+      artwork?.title,
+      48
+    );
+
+
+  return `
+
+    <a
+
+      class="card ${side}"
+
+      href="${escapeHtml(url)}"
+
+      target="_blank"
+
+      rel="noopener"
+
+      style="
+        --bgimg:url('${escapeHtml(image)}');
+        --focus:${focus};
+      "
+
+    >
+
+      <div class="cardBg">
+      </div>
+
+      <div class="cardScene">
+      </div>
+
+      <div class="cardFocus">
+      </div>
+
+      <div class="cardShade">
+      </div>
+
+      <div class="cardGlow">
+      </div>
+
+
+      <div class="cardBody">
+
+        <small>
+          ${slot.label}
+        </small>
+
+        <h3>
+          ${slot.title}
+        </h3>
+
+        <p>
+          ${slot.description}
+        </p>
+
+        ${
+          articleTitle
+
+          ? `
+            <div class="artTitle">
+              ${escapeHtml(articleTitle)}
+            </div>
+          `
+
+          : ''
+        }
+
+      </div>
+
+    </a>
+
+  `;
+
+}
+
+
+
+function getMemberArtwork(
+  member
+){
+
+  return
+
+    member?.featuredArtwork ||
+
+    member?.featured_artwork ||
+
+    member?.latestArtwork ||
+
+    member?.latest_artwork ||
+
+    member?.memberArtwork ||
+
+    member?.artwork ||
+
+    null;
+
+}
+
+
+
+function getMemberBackground(
+  member
+){
+
+  const artwork =
+    getMemberArtwork(member);
+
+
+  return
+
+    artwork?.image ||
+
+    artwork?.eyecatch ||
+
+    artwork?.thumbnail ||
+
+    member?.artwork_image ||
+
+    member?.featured_artwork_image ||
+
+    member?.image ||
+
+    '';
+
+}
+
+
+
+function getMemberHeadline(
+  member
+){
+
+  const artwork =
+    getMemberArtwork(member);
+
+
+  const title =
+
+    artwork?.title ||
+
+    artwork?.name ||
+
+    '';
+
+
+  if(
+    title
+  ){
+
+    return
+      shorten(
+        title,
+        56
+      );
+
+  }
+
+
+  return
+    shorten(
+      member?.profile,
+      56
+    );
+
+}
+
+
+
+function createMemberCard(
+  member,
+  index
+){
+
+  const name =
+
+    member.nickname ||
+
+    member.urlname ||
+
+    'Creator';
+
+
+  const avatar =
+    member.image || '';
+
+
+  const background =
+    getMemberBackground(member);
+
+
+  const profile =
+    shorten(
+      member.profile,
+      105
+    );
+
+
+  const headline =
+    getMemberHeadline(member);
+
+
+  const role =
+
+    member.urlname === 'ss_yr' ||
+    index === 0
+
+      ? 'HOST / CURATOR'
+
+      : 'MEMBER / CREATOR';
+
+
+  const profileURL =
+
+    member.url ||
+
+    `https://note.com/${member.urlname ?? ''}`;
+
+
+  const searchText =
+
+    (
+      name +
+      ' ' +
+      (member.urlname ?? '') +
+      ' ' +
+      (member.profile ?? '')
+    )
+
+    .toLowerCase();
+
+
+  return `
+
+    <a
+
+      class="member"
+
+      href="${escapeHtml(profileURL)}"
+
+      target="_blank"
+
+      rel="noopener"
+
+      data-search="${escapeHtml(searchText)}"
+
+      style="
+        --mimg:url('${escapeHtml(background)}');
+      "
+
+    >
+
+      <div class="memberArtwork">
+      </div>
+
+      <div class="memberOverlay">
+      </div>
+
+      <div class="memberCut">
+      </div>
+
+
+      <div class="avatar">
+
+        ${
+          avatar
+
+          ? `
+            <img
+              src="${escapeHtml(avatar)}"
+              alt="${escapeHtml(name)}"
+              loading="lazy"
+            >
+          `
+
+          : ''
+        }
+
+      </div>
+
+
+      <div class="memberMain">
+
+        <span class="role">
+          ${role}
+        </span>
+
+        <h3>
+          ${escapeHtml(name)}
+        </h3>
+
+
+        ${
+          headline
+
+          ? `
+            <p class="headline">
+              ${escapeHtml(headline)}
+            </p>
+          `
+
+          : ''
+        }
+
+
+        ${
+          profile
+
+          ? `
+            <p class="bio">
+              ${escapeHtml(profile)}
+            </p>
+          `
+
+          : ''
+        }
+
+
+        <span class="memberLink">
+          NOTE PROFILE ↗
+        </span>
+
+      </div>
+
+    </a>
+
+  `;
+
+}
+
+
+
+function filterMembers(){
+
+  const query =
+
+    (
+      $('#search').value ||
+      ''
+    )
+
+    .trim()
+
+    .toLowerCase();
+
+
+  document
+    .querySelectorAll(
+      '.member'
+    )
+
+    .forEach(
+
+      card => {
+
+        const visible =
+
+          !query ||
+
+          (
+            card.dataset.search ||
+            ''
+          )
+
+          .includes(query);
+
+
+        card.dataset.hide =
+          visible
+            ? '0'
+            : '1';
+
+      }
+
+    );
+
+}
+
+
+
+async function init(){
+
+  try{
+
+
+    const response =
+
+      await fetch(
+
+        API,
+
+        {
+          cache:'no-store'
+        }
+
+      );
+
+
+    if(
+      !response.ok
+    ){
+
+      throw new Error(
+        'API error'
+      );
+
+    }
+
+
+    const data =
+      await response.json();
+
+
+    const magazine =
+      data.magazine || {};
+
+
+    const members =
+
+      Array.isArray(
+        data.members
+      )
+
+      ? data.members
+
+      : [];
+
+
+    const artworks =
+
+      Array.isArray(
+        data.artworks
+      )
+
+      ? data.artworks
+
+      : [];
+
+
+/* MAGAZINE COVER */
+
+    const cover =
+
+      magazine.coverLandscape ||
+
+      magazine.cover ||
+
+      '';
+
+
+    if(
+      cover
+    ){
+
+      document
+        .querySelector(
+          '.heroArt'
+        )
+
+        .style
+        .setProperty(
+          '--hero',
+          `url("${cover}")`
+        );
+
+
+      $('#magThumb').src =
+        cover;
+
+    }
+
+
+/* MAGAZINE NAME */
+
+    if(
+      magazine.name
+    ){
+
+      $('#magName').textContent =
+
+        String(
+          magazine.name
+        )
+
+        .replace(
+          /\s*SELECT\s*/ig,
+          ' '
+        )
+
+        .trim();
+
+    }
+
+
+/* MAGAZINE DESCRIPTION */
+
+    if(
+      magazine.description
+    ){
+
+      $('#magDesc').textContent =
+
+        shorten(
+          magazine.description,
+          110
+        );
+
+
+      $('#leadText').textContent =
+
+        shorten(
+          magazine.description,
+          170
+        );
+
+    }
+
+
+/* MAGAZINE URL */
+
+    if(
+      magazine.url
+    ){
+
+      $('#magLink').href =
+        magazine.url;
+
+    }
+
+
+/* ARTWORK GALLERY */
+
+    const galleryArtworks =
+
+      chooseArtworks(
+        artworks
+      );
+
+
+    $('#gallery').innerHTML =
+
+      SLOTS
+
+      .map(
+
+        (
+          slot,
+          index
+        ) =>
+
+          createConceptCard(
+
+            galleryArtworks[index],
+
+            slot,
+
+            index
+
+          )
+
+      )
+
+      .join('');
+
+
+/* MEMBERS */
+
+    $('#memberGrid').innerHTML =
+
+      members
+
+      .map(
+
+        (
+          member,
+          index
+        ) =>
+
+          createMemberCard(
+            member,
+            index
+          )
+
+      )
+
+      .join('');
+
+
+    filterMembers();
+
+
+  }
+  catch(error){
+
+    console.error(
+      error
+    );
+
+
+    $('#gallery').innerHTML =
+
+      `
+        <div class="rule">
+          <b>
+            読み込みに失敗しました
+          </b>
+
+          <span>
+            ページを再読み込みしてください。
+          </span>
+        </div>
+      `;
+
+
+    $('#memberGrid').innerHTML =
+      '';
+
+  }
+
+}
+
+
+$('#search')
+  .addEventListener(
+    'input',
+    filterMembers
+  );
+
+
+init();
+
 </script>
+
 </body>
-</html>
+  </html>
