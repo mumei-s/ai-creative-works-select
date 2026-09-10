@@ -59,10 +59,10 @@ const THEMES=[
   {t:'Creators',d:'参加クリエイターの世界観や活動をひらいて見せる。',a:'#ff9d5b',b:'#72f1ff'}
 ];
 const BG_POS=['80% center','18% center','74% center','28% center','25% center','22% center'];
-const CROP_POS=['50% 28%','50% 50%','50% 29%','50% 28%','25% 24%','50% 28%'];
-const ART_SIZE=['cover','90% auto','cover','cover','cover','cover'];
+const CROP_POS=['50% 28%','50% 2%','50% 29%','50% 28%','25% 24%','50% 28%'];
+const ART_SIZE=['cover','100% auto','cover','cover','cover','cover'];
 const $=s=>document.querySelector(s);
-const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]));
+const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot',"'":'&#039;'}[m]));
 const clean=s=>String(s??'').replace(/https?:\/\/\S+/g,' ').replace(/\s+/g,' ').trim();
 const short=(s,n)=>{const t=clean(s);return t.length>n?t.slice(0,n)+'…':t};
 function noteUrl(a){return a?.url || (a?.key ? `https://note.com/ss_yr/n/${a.key}` : 'https://note.com/ss_yr/m/m95b78222e9b9')}
