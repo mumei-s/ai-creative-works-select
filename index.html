@@ -47,8 +47,8 @@ const THEMES=[
   {t:'Experiment',d:'新モデル、新機能、新しい見せ方を試して遊ぶ。',a:'#a9ff52',b:'#76f0ff'},
   {t:'Creators',d:'参加クリエイターの世界観や活動をひらいて見せる。',a:'#ff9d5b',b:'#72f1ff'}
 ];
-const BG_POS=['80% center','18% center','74% center','28% center','76% center','22% center'];
-const CROP_POS=['50% 28%','50% 25%','50% 29%','50% 28%','72% 24%','50% 28%'];
+const BG_POS=['80% center','18% center','74% center','28% center','25% center','22% center'];
+const CROP_POS=['50% 28%','50% 25%','50% 29%','50% 28%','25% 24%','50% 28%'];
 const $=s=>document.querySelector(s);
 const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]));
 const clean=s=>String(s??'').replace(/https?:\/\/\S+/g,' ').replace(/\s+/g,' ').trim();
